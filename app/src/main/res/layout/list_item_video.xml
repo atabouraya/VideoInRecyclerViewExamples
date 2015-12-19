@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/video_feed_item_video_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:minHeight="200dp" />
+
+    <com.atabouraya.videoinrecyclerview.ui.CustomTextureVideoView
+        android:id="@+id/video_feed_item_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:minHeight="1dp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/lyt_image_loader_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/video_play_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:padding="1dp"
+
+        android:src="@mipmap/ic_play_circle_outline_black_48dp"
+        android:tint="@android:color/holo_red_dark" />
+</FrameLayout>
